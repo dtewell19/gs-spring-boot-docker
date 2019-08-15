@@ -1,11 +1,6 @@
 pipeline {
-  agent {
-    docker {
-      args '-p 3000:3000'
-      image 'openjdk:8-jre-alpine'
-    }
+  node {  
 
-  }
   stages {
     stage('Build') {
       steps {
